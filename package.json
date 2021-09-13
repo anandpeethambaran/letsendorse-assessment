@@ -1,0 +1,26 @@
+{
+  "name": "letsendorse-assessment",
+  "version": "1.0.0",
+  "description": "Letsendorse assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandpeethambaran/letsendorse-assessment.git"
+  },
+  "author": "Anand T P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandpeethambaran/letsendorse-assessment/issues"
+  },
+  "homepage": "https://github.com/anandpeethambaran/letsendorse-assessment#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^6.0.5",
+    "winston": "^3.3.3"
+  }
+}
