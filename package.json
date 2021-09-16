@@ -21,6 +21,7 @@
   "dependencies": {
     "config": "^3.3.6",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
     "helmet": "^4.6.0",
     "mongoose": "^6.0.5",
     "winston": "^3.3.3"

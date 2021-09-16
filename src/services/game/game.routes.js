@@ -1,8 +1,9 @@
 const router = require('express').Router();
-const { joinGame, startNewGame } = require('./game.service')
+const { joinGame, startNewGame, makeMovement } = require('./game.service')
 
 
 router.post('/new-game', startNewGame)
-router.post('/join-game', joinGame)
+router.get('/join-game/:id', joinGame)
+router.post('/movement/:id', makeMovement)
 
 module.exports = router;
