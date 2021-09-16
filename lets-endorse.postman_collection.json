@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "807c3e1a-9ce3-4e7d-9e2c-7f684a57a2a6",
+		"name": "lets-endorse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "start new game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"COMPUTER\",\n    \"host\": \"Anand\",\n    \"challenger\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3030/game/new-game",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"game",
+						"new-game"
+					]
+				},
+				"description": "Create a new Game\ntype can be \"PLAYER\" and \"COMPUTER\"\nif type is \"PLAYER\" we need to pass challenger name also."
+			},
+			"response": []
+		},
+		{
+			"name": "join game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/game/join-game/64906",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"game",
+						"join-game",
+						"64906"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "make movement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"posX\": 0,\n    \"posY\": 1,\n    \"move\": \"O\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3030/game/movement/32952",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"game",
+						"movement",
+						"32952"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
